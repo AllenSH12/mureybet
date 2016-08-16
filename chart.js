@@ -17,7 +17,9 @@ var path = d3.geo.path()
     .projection(projection)
     .context(c);
 
-var title = d3.select("h1");
+var yearLabel = d3.select("td.year");
+var cityLabel = d3.select("td.city");
+var populationLabel = d3.select("td.population");
 
 queue()
     .defer(d3.json, "data/world-110m.json")
@@ -40,7 +42,11 @@ function ready(error, world, cities) {
     d3.transition()
         .duration(1250)
         .each("start", function() {
-          title.text(activeCity.properties.year + ': ' + activeCity.properties.name);
+          var population = Number(activeCity.properties.population).toLocaleString();
+
+          cityLabel.text(activeCity.properties.name);
+          populationLabel.text(population);
+          yearLabel.text(activeCity.properties.year)
         })
         .tween("rotate", function() {
           var p = activeCity.geometry.coordinates,

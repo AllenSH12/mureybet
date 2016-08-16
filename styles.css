@@ -1,0 +1,33 @@
+h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+#chart {
+  margin: 0 auto;
+  width: 480px;
+}
+
+.citations {
+  position: fixed;
+  float: left;
+  font-size: 12px;
+  bottom: 0;
+  padding-left: 20px;
+}
+
+.summaryStats {
+  margin: 0 auto;
+}
+
+td {
+  width: 100px;
+  text-align: center;
+}

@@ -3,32 +3,28 @@
 
 <head>
   <meta charset="utf-8">
-  <style>
-    h1 {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 18px;
-      text-align: center;
-    }
-
-    #chart {
-      margin: 0 auto;
-      width: 480px;
-    }
-
-    .citations {
-      position: fixed;
-      float: left;
-      font-size: 12px;
-      bottom: 0;
-      padding-left: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+  <h1>Largest Cities Through History</h1>
   <div id="chart">
   </div>
-  <h1></h1>
+  <h1 class="city"></h1>
+  <h2></h2>
+
+  <table class="summaryStats">
+    <tr>
+      <th>Year</th>
+      <th>City</th>
+      <th>Population</th>
+    </tr>
+    <tr>
+      <td class="year"></td>
+      <td class="city"></td>
+      <td class="population"></td>
+    </tr>
+  </table>
 
   <ol class="citations">
     <li><p class="citation">Population data from <i><a href="http://www.ianmorris.org/docs/social-development.pdf" target="_blank">SOCIAL DEVELOPMENT</a></i> by Ian Morris</p></li>
