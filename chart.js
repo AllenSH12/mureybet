@@ -1,6 +1,8 @@
 var width = 640,
     height = 640;
 
+var scale = d3.scale.sqrt().domain([500, 2e7]).range([2, 10]);
+
 var projection = d3.geo.orthographic()
     .translate([width / 2, height / 2])
     .scale(width / 2 - 20)
@@ -15,7 +17,14 @@ var c = canvas.node().getContext("2d");
 
 var path = d3.geo.path()
     .projection(projection)
-    .context(c);
+    .context(c)
+    .pointRadius(function(d) {
+      if (d.type === "Feature" && d.properties.name) {
+        console.log(scale(d.properties.population));
+        return scale(d.properties.population);
+      }
+      return 20;
+    });
 
 var yearLabel = d3.select("td.year");
 var cityLabel = d3.select("td.city");
