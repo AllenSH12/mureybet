@@ -1,8 +1,19 @@
 [{
   "geometry": {
-    "coordinates": [38.1287, 36.0434]
+    "coordinates": [38.1287, 36.0434],
+    "type": "Point"
   },
   "properties": {
     "name": "Mureybet"
-  }
+  },
+  "type": "Feature"
+}, {
+  "geometry": {
+    "coordinates": [35.447756, 30.370780],
+    "type": "Point"
+  },
+  "properties": {
+    "name": "Beidha"
+  },
+  "type": "Feature"
 }]
