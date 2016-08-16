@@ -20,8 +20,8 @@ var path = d3.geo.path()
 var title = d3.select("h1");
 
 queue()
-    .defer(d3.json, "/data/world-110m.json")
-    .defer(d3.json, "/data/biggest_cities.json")
+    .defer(d3.json, "data/world-110m.json")
+    .defer(d3.json, "data/biggest_cities.json")
     .await(ready);
 
 function ready(error, world, cities) {
