@@ -40,7 +40,7 @@ function ready(error, world, cities) {
     d3.transition()
         .duration(1250)
         .each("start", function() {
-          title.text(activeCity.properties.name);
+          title.text(activeCity.properties.year + ': ' + activeCity.properties.name);
         })
         .tween("rotate", function() {
           var p = activeCity.geometry.coordinates,
