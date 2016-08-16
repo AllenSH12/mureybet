@@ -4,7 +4,9 @@
     "type": "Point"
   },
   "properties": {
-    "name": "Mureybet"
+    "name": "Mureybet",
+    "year": "8000 BC",
+    "population": 500
   },
   "type": "Feature"
 }, {
@@ -13,7 +15,86 @@
     "type": "Point"
   },
   "properties": {
-    "name": "Beidha"
+    "name": "Beidha",
+    "year": "7000 BC",
+    "population": 1000
+  },
+  "type": "Feature"
+}, {
+  "geometry": {
+    "coordinates": [32.828056, 37.666667],
+    "type": "Point"
+  },
+  "properties": {
+    "name": "Çatalhöyük",
+    "year": "6000 BC",
+    "population": 3000
+  },
+  "type": "Feature"
+}, {
+  "geometry": {
+    "coordinates": [41.058644, 36.667617],
+    "type": "Point"
+  },
+  "properties": {
+    "name": "Tell Brak",
+    "year": "5000 BC",
+    "population": 4000
+  },
+  "type": "Feature"
+}, {
+  "geometry": {
+    "coordinates": [45.636111, 31.322222],
+    "type": "Point"
+  },
+  "properties": {
+    "name": "Uruk",
+    "year": "4000 BC",
+    "population": 5000
+  },
+  "type": "Feature"
+}, {
+  "geometry": {
+    "coordinates": [45.636111, 31.322222],
+    "type": "Point"
+  },
+  "properties": {
+    "name": "Uruk",
+    "year": "3000 BC",
+    "population": 45000
+  },
+  "type": "Feature"
+}, {
+  "geometry": {
+    "coordinates": [31.250833, 29.844722],
+    "type": "Point"
+  },
+  "properties": {
+    "name": "Memphis",
+    "year": "2000 BC",
+    "population": 60000
+  },
+  "type": "Feature"
+}, {
+  "geometry": {
+    "coordinates": [32.610278, 25.720556],
+    "type": "Point"
+  },
+  "properties": {
+    "name": "Thebes",
+    "year": "1000 BC",
+    "population": 50000
+  },
+  "type": "Feature"
+}, {
+  "geometry": {
+    "coordinates": [12.5, 41.9],
+    "type": "Point"
+  },
+  "properties": {
+    "name": "Rome",
+    "year": "1 AD",
+    "population": 1000000
   },
   "type": "Feature"
 }]
