@@ -93,8 +93,96 @@
   },
   "properties": {
     "name": "Rome",
-    "year": "1 AD",
+    "year": "1 CE",
     "population": 1000000
+  },
+  "type": "Feature"
+}, {
+  "geometry": {
+    "coordinates": [28.955, 41.013611],
+    "type": "Point"
+  },
+  "properties": {
+    "name": "Constantinople",
+    "year": "500 CE",
+    "population": 450000
+  },
+  "type": "Feature"
+}, {
+  "geometry": {
+    "coordinates": [-4.766667, 37.883333],
+    "type": "Point"
+  },
+  "properties": {
+    "name": "Cordoba",
+    "year": "1000 CE",
+    "population": 200000
+  },
+  "type": "Feature"
+}, {
+  "geometry": {
+    "coordinates": [31.233333, 30.05],
+    "type": "Point"
+  },
+  "properties": {
+    "name": "Cairo",
+    "year": "1500 CE",
+    "population": 400000
+  },
+  "type": "Feature"
+}, {
+  "geometry": {
+    "coordinates": [28.955, 41.013611],
+    "type": "Point"
+  },
+  "properties": {
+    "name": "Constantinople",
+    "year": "1600 CE",
+    "population": 400000
+  },
+  "type": "Feature"
+}, {
+  "geometry": {
+    "coordinates": [-0.1275, 51.507222],
+    "type": "Point"
+  },
+  "properties": {
+    "name": "London",
+    "year": "1700 CE",
+    "population": 600000
+  },
+  "type": "Feature"
+}, {
+  "geometry": {
+    "coordinates": [-0.1275, 51.507222],
+    "type": "Point"
+  },
+  "properties": {
+    "name": "London",
+    "year": "1800 CE",
+    "population": 900000
+  },
+  "type": "Feature"
+}, {
+  "geometry": {
+    "coordinates": [-0.1275, 51.507222],
+    "type": "Point"
+  },
+  "properties": {
+    "name": "London",
+    "year": "1900 CE",
+    "population": 6600000
+  },
+  "type": "Feature"
+}, {
+  "geometry": {
+    "coordinates": [-74.0059, 40.7127],
+    "type": "Point"
+  },
+  "properties": {
+    "name": "New York City",
+    "year": "2000 CE",
+    "population": 16700000
   },
   "type": "Feature"
 }]
