@@ -1,5 +1,9 @@
-var width = 480,
-    height = 480;
+var width = 640,
+    height = 640;
+
+var zoom = d3.behavior.zoom()
+    .size([width, height])
+    .on("zoom", zoomed);
 
 var projection = d3.geo.orthographic()
     .translate([width / 2, height / 2])
@@ -16,6 +20,15 @@ var c = canvas.node().getContext("2d");
 var path = d3.geo.path()
     .projection(projection)
     .context(c);
+
+var simplify = d3.geo.transform({
+  point: function(x, y, z) {
+    if (z < visibleArea) return;
+    x = x * scale + translate[0];
+    y = y * scale + translate[1];
+    if (x >= -10 && x <= width + 10 && y >= -10 && y <= height + 10 || z >= invisibleArea) this.stream.point(x, y);
+  }
+});
 
 var yearLabel = d3.select("td.year");
 var cityLabel = d3.select("td.city");
@@ -66,6 +79,10 @@ function ready(error, world, cities) {
       .transition()
         .each("end", transition);
   })();
+}
+
+function zoomed(d) {
+
 }
 
 d3.select(self.frameElement).style("height", height + "px");
