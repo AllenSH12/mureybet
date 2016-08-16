@@ -51,7 +51,7 @@ function ready(error, world, cities) {
     d3.transition()
         .duration(1250)
         .each("start", function() {
-          var population = Number(activeCity.properties.population).toLocaleString();
+          var population = numberWithCommas(activeCity.properties.population);
 
           cityLabel.text(activeCity.properties.name);
           populationLabel.text(population);
@@ -75,6 +75,13 @@ function ready(error, world, cities) {
       .transition()
         .each("end", transition);
   })();
+}
+
+// http://stackoverflow.com/a/2901298
+function numberWithCommas(x) {
+    var parts = x.toString().split(".");
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return parts.join(".");
 }
 
 d3.select(self.frameElement).style("height", height + "px");
